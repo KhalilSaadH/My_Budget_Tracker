@@ -17,7 +17,10 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <Details title="Income" />
+        <div className={styles.grid+' '+styles.card}>
+          <Details title="Income" subheader="total"  />
+        </div>
+        
        
 
         {/* <div className={styles.grid}>
