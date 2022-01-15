@@ -1,10 +1,30 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import React, { useEffect, useRef } from 'react';
+import { Grid } from '@mui/material';
+
+import { SpeechState, useSpeechContext } from "@speechly/react-client";
+import { PushToTalkButton, PushToTalkButtonContainer } from '@speechly/react-ui';
+
+import   Main  from '../components/Main/Main';
+
 import   Details   from '../components/Details/Details.jsx'
 import styles from '../styles/Home.module.css'
 
 const Home: NextPage = () => {
+ 
+  const { speechState } = useSpeechContext();
+  const mainRef = useRef(null)
+
+  // const executeScroll = () => mainRef.current.scrollIntoView();
+
+  // useEffect(() => {
+  //   if (speechState === SpeechState.Recording) {
+  //     executeScroll();
+  //   }
+  // }, [speechState]);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -17,9 +37,26 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <div className={styles.grid+' '+styles.card}>
+        {/* <div className={styles.grid+' '+styles.card}>
           <Details title="Income" subheader="total"  />
-        </div>
+        </div> */}
+        {/* <Grid className={classes.grid} container spacing={0} alignItems="center" justify="center" style={{ height: '100vh'}}> */}
+        {/* <Grid item xs={12} sm={4} >
+          <Details title="Income" subheader="" />
+        </Grid> */}
+        <Grid  item xs={12} sm={3} >
+          <Main />
+        </Grid>
+        <Grid item xs={12} sm={4} >
+          <Details title="Income" subheader="" />
+        </Grid>
+        <Grid item xs={12} sm={4} >
+          <Details title="Expense" subheader="" />
+        </Grid>
+        <PushToTalkButtonContainer>
+          <PushToTalkButton />
+        </PushToTalkButtonContainer>
+      {/* </Grid> */}
         
        
 

@@ -1,5 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { TextField, Typography, Grid, Button, FormControl, InputLabel, Select, MenuItem } from '@material-ui/core';
+import { TextField, Typography, Grid, Button, FormControl, InputLabel, Select, MenuItem } from '@mui/material';
 import { v4 as uuidv4 } from 'uuid';
 
 import { useSpeechContext } from '@speechly/react-client';

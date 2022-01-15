@@ -7,7 +7,7 @@ import Form from './Form/Form';
 import List from './List/List';
 import InfoCard from '../InfoCard';
 
-const main = () => {
+const Main = () => {
   const classes = useStyles();
   const { balance } = useContext(ExpenseTrackerContext);
 
@@ -33,4 +33,4 @@ const main = () => {
   );
 };
 
-export default main;
+export default Main;
