@@ -3,7 +3,7 @@ import { makeStyles } from '@mui/styles';
 export default makeStyles(() => ({
   media: {
     height: 0,
-    paddingTop: '56.25%', // 16:9
+    paddingTop: '56.25%' // 16:9
   },
   expand: {
     transform: 'rotate(0deg)',
@@ -17,5 +17,9 @@ export default makeStyles(() => ({
   },
   divider: {
     margin: '20px 0',
+  },
+  root : {
+    marginRight: '5px',
+    marginLeft: '5px'
   },
 }));

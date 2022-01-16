@@ -33,18 +33,15 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      {/* <main className={styles.main}> */}
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+           <a href="#">My budget Tracker</a>
         </h1>
         {/* <div className={styles.grid+' '+styles.card}>
           <Details title="Income" subheader="total"  />
         </div> */}
-        {/* <Grid className={classes.grid} container spacing={0} alignItems="center" justify="center" style={{ height: '100vh'}}> */}
-        {/* <Grid item xs={12} sm={4} >
-          <Details title="Income" subheader="" />
-        </Grid> */}
-        <Grid  item xs={12} sm={3} >
+      <Grid className={styles.grid}>
+        <Grid  item xs={12} sm={4} >
           <Main />
         </Grid>
         <Grid item xs={12} sm={4} >
@@ -53,10 +50,11 @@ const Home: NextPage = () => {
         <Grid item xs={12} sm={4} >
           <Details title="Expense" subheader="" />
         </Grid>
+      </Grid>
         <PushToTalkButtonContainer>
           <PushToTalkButton />
         </PushToTalkButtonContainer>
-      {/* </Grid> */}
+     
         
        
 
@@ -67,7 +65,7 @@ const Home: NextPage = () => {
           </a> */}
 
           
-      </main>
+      {/* </main> */}
 
       <footer className={styles.footer}>
         <a
