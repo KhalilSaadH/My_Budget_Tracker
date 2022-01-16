@@ -8,7 +8,7 @@ import type { AppProps } from 'next/app'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <SpeechProvider appId="7c4aee08-1073-4a32-b862-ebe1850e0732" language="en-US">
+    <SpeechProvider appId="e8016cb4-f9a4-4256-bf94-87314a2102bb" language="en-US">
       <Provider>
         <Component {...pageProps} />
       </Provider>
