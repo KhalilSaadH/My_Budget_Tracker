@@ -15,7 +15,7 @@ import dynamic from 'next/dynamic';
 
 const Home: NextPage = () => {
   const Main = dynamic(
-    () => import('../components/Main/Main'),
+    () => import('../components/Main/Main.jsx'),
     { ssr: false }
   );
   const Details = dynamic(
