@@ -7,7 +7,7 @@ export default makeStyles(() => ({
     backgroundColor: green[500],
   },
   avatarExpense: {
-    color: red[500],
+    color: '#fff',
     backgroundColor: red[500],
   },
   list: {
