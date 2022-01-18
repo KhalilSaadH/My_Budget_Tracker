@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import React, { useEffect, useRef } from 'react';
+import React, { Component, FunctionComponent, useEffect, useRef } from 'react';
 import { Grid } from '@mui/material';
 
 import { SpeechState, useSpeechContext } from "@speechly/react-client";
@@ -14,7 +14,7 @@ import styles from '../styles/Home.module.css'
 import dynamic from 'next/dynamic';
 
 const Home: NextPage = () => {
-  const Main = dynamic<{}>(
+  const Main = dynamic<any>(
     () => import('../components/Main/Main.jsx'),
     { ssr: false }
   );
