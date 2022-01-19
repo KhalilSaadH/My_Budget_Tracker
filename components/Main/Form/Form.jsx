@@ -95,7 +95,7 @@ const NewTransactionForm = () => {
       <Grid item xs={6}>
         <FormControl fullWidth>
           <InputLabel>Type</InputLabel>
-          <Select value={formData.type} onChange={(e) => setFormData({ ...formData, type: e.target.value })}>
+          <Select label="Type" value={formData.type} onChange={(e) => setFormData({ ...formData, type: e.target.value })}>
             <MenuItem value="Income">Income</MenuItem>
             <MenuItem value="Expense">Expense</MenuItem>
           </Select>
