@@ -4,6 +4,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  target: 'serverless',
 }
 
 module.exports = nextConfig
