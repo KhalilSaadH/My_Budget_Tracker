@@ -3,8 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   typescript: {
     ignoreBuildErrors: true,
-  },
-  target: 'serverless',
+  }
 }
 
 module.exports = nextConfig
