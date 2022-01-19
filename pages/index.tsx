@@ -12,6 +12,9 @@ import { PushToTalkButton, PushToTalkButtonContainer } from '@speechly/react-ui'
 //import   Details   from '../components/Details/Details.jsx'
 import styles from '../styles/Home.module.css'
 import dynamic from 'next/dynamic';
+//import   Main  from dynamic'../components/Main/Main';
+
+//import   Details   from '../components/Details/Details.jsx'
 const Main = dynamic(
   () => import('../components/Main/Main.jsx'),
   { ssr: false }
