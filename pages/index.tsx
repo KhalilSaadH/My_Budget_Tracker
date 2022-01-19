@@ -7,20 +7,20 @@ import { Grid } from '@mui/material';
 import { SpeechState, useSpeechContext } from "@speechly/react-client";
 import { PushToTalkButton, PushToTalkButtonContainer } from '@speechly/react-ui';
 
-import   Main  from '../components/Main/Main';
+// import   Main  from '../components/Main/Main';
 
-import   Details   from '../components/Details/Details.jsx';
+// import   Details   from '../components/Details/Details.jsx';
 import styles from '../styles/Home.module.css'
 import dynamic from 'next/dynamic';
 
-// const Main = dynamic(
-//   () => import('../components/Main/Main.jsx'),
-//   { ssr: false }
-// );
-// const Details = dynamic(
-//   () => import('../components/Details/Details.jsx'),
-//   { ssr: false }
-// );
+const Main = dynamic(
+  () => import('../components/Main/Main.jsx'),
+  { ssr: false }
+);
+const Details = dynamic(
+  () => import('../components/Details/Details.jsx'),
+  { ssr: false }
+);
 
 const Home: NextPage = () => {
   
